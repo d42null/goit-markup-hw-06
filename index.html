@@ -415,6 +415,22 @@
             </li>
           </ul>
         </div>
+        <form name="form-subscribe">
+          <label>
+            <p class="follow-title">Підпишіться на розсилку</p>
+            <input
+              class="email-input"
+              type="email"
+              name="email-subscribe"
+              placeholder="E-mail"
+          /></label>
+          <button class="btn-subscribe" type="submit">
+            Підписатися
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -424,6 +440,65 @@
             <use href="./images/icons.svg#icon-close" />
           </svg>
         </button>
+        <form name="form-feedback">
+          <div
+            class="form-feeddback-group"
+            aria-labelledby="contact-details-head"
+            role="group"
+          >
+            <p class="form-feedback-title" id="contact-details-head">
+              Залиште свої дані, ми вам передзвонимо
+            </p>
+            <label class="label">
+              Ім'я
+              <input class="input" type="text" name="user-name" />
+              <svg class="form-icon">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </label>
+            <label class="label">
+              Телефон
+              <input class="input" type="tel" name="user-tel" />
+              <svg class="form-icon">
+                <use href="./images/icons.svg#icon-tel"></use>
+              </svg>
+            </label>
+            <label class="label">
+              Пошта
+              <input class="input" type="email" name="user-mail" />
+              <svg class="form-icon">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+            </label>
+            <label class="label">
+              Коментар
+              <textarea
+                class="user-comment"
+                name="user-comment"
+                placeholder="Введіть текст"
+              >
+              </textarea>
+            </label>
+            <label class="label chbx-lbl">
+              <input
+                class="chbx visually-hidden"
+                type="checkbox"
+                name="chbx-agreement"
+                value="agreement"
+              />
+              <span class="chbx-custom">
+                <svg>
+                  <use href="./images/icons.svg#icon-chbx"></use>
+                </svg>
+              </span>
+              <span
+                >Погоджуюся з розсилкою та приймаю
+                <a class="cond-link" href="#"> Умови договору </a>
+              </span>
+            </label>
+            <button class="btn-feedback" type="submit">Відправити</button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
