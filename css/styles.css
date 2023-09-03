@@ -402,7 +402,7 @@ address li + li {
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
-
+  display: block;
   margin-bottom: 20px;
 }
 .follow-social-link {
@@ -668,12 +668,18 @@ address li + li {
 .user-comment:hover,
 .chbx-custom:focus,
 .chbx-custom:hover,
-.chbx-lbl:hover > .chbx-custom {
+.chbx-lbl:hover > .chbx-custom,
+.chbx:focus + .chbx-custom {
   border-color: var(--color-brand);
 }
 .input:focus + svg,
 .input:hover + svg {
   fill: var(--color-brand);
+}
+
+.input:focus,
+.user-comment:focus {
+  outline: none;
 }
 .form-icon {
   position: absolute;
@@ -710,6 +716,11 @@ address li + li {
   margin-top: 20px;
   display: flex;
   align-items: center;
+  color: (var(--color-secondary));
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71429;
+  letter-spacing: 0.42px;
 }
 .chbx-custom {
   width: 16px;
